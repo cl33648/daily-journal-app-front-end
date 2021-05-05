@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { DayService } from './day.service';
+import { TaskService } from './task.service';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,7 @@ import { DayService } from './day.service';
     BrowserModule,
     HttpClientModule
   ],
-  providers: [DayService],
+  providers: [DayService, TaskService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
